@@ -73,12 +73,23 @@
           <script type="text/template">
             ### Event-based
 
-            * Files: change to data in S3 buckets (Push)
-            * Database: updates in DynamoDB tables (Pull)
-            * Pub-sub: message to Simple Notification Service topic (Push)
-            * Queue: records posted to Kinesis stream (Pull)
-            * Email: email received by Simple Email Service (Push)
-            * Others: Cognito, CloudWatch Logs, CloudFormation
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Dir</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Files</td><td>change to data in S3 buckets</td><td>Push</td></tr>
+                <tr><td>Database</td><td>updates in DynamoDB tables</td><td>Pull</td></tr>
+                <tr><td>Pub-sub</td><td>message to Simple Notification Service topic</td><td>Push</td>
+                <tr><td>Queue</td><td>records posted to Kinesis stream</td><td>Pull</td>
+                <tr><td>Email</td><td>email received by Simple Email Service</td><td>Push</td>
+                <tr><td>...</td><td>Cognito, CloudWatch Logs, CloudFormation</td><td>?</td>
+              </tbody>
+            </table>
 
             Push event mappings are maintained on source side.
           </script>
