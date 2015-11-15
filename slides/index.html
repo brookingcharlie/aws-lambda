@@ -50,16 +50,6 @@
 
         <section data-markdown>
           <script type="text/template">
-            ### References
-
-            * [AWS Lambda Product Details](https://aws.amazon.com/lambda/details/)
-            * [AWS Lambda Developer Guide](http://docs.aws.amazon.com/lambda/latest/dg)
-            * [AWS Blog: AWS Lambda – Run Code in the Cloud](https://aws.amazon.com/blogs/aws/run-code-cloud/)
-          </script>
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
             ### What is AWS Lambda?
 
             > AWS Lambda is a compute service that runs your code in response to events and
@@ -97,6 +87,33 @@
 
         <section data-markdown>
           <script type="text/template">
+            ### Code execution
+
+            * Run code without managing containers or virtual machines.
+
+            * AWS does server and operating system maintenance, capacity provisioning and scaling, security patching, code deployment, monitoring, and logging.
+
+            * *Microservices*: could just be a snippet of code.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ### Configuring "Lambda Functions"
+
+            * Lambda Function code authored in Java, Node.js, or Python 2.7
+
+            * RAM (CPU is allocated using same ratio as EC2 sizes, e.g. M3)
+
+            * IAM role to gain permissions needed for Lambda execution
+
+            * Limits: epheral disk (512MB), duration (300s), request/response payloads (6MB),
+              compressed/uncompressed deployment (50/250MB), unique event sources per type per account (50)
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
             ### Pretty Code
 
             ```JavaScript
@@ -115,6 +132,16 @@
               }
             }
             ```
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ### References
+
+            * [AWS Lambda Product Details](https://aws.amazon.com/lambda/details/)
+            * [AWS Lambda Developer Guide](http://docs.aws.amazon.com/lambda/latest/dg)
+            * [AWS Blog: AWS Lambda – Run Code in the Cloud](https://aws.amazon.com/blogs/aws/run-code-cloud/)
           </script>
         </section>
 
