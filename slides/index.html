@@ -81,7 +81,19 @@
               </tbody>
             </table>
 
-            Push event mappings are maintained on source side.
+            Can also schedule invocation using the AWS Lambda console
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ### On-demand invocation
+            
+            > [...] you can also invoke your Lambda function over HTTPS
+            > [...] by defining a custom REST API and endpoint using Amazon API Gateway.
+
+            > User applications such as client, mobile, or web applications can publish events and invoke
+            > Lambda functions using the AWS SDKs or AWS Mobile SDKs such as the AWS SDK for Android. 
           </script>
         </section>
 
@@ -94,6 +106,8 @@
             * AWS does server and operating system maintenance, capacity provisioning and scaling, security patching, code deployment, monitoring, and logging.
 
             * *Microservices*: could just be a snippet of code.
+
+            * Comparison: EC2 (VMs); ECS (Containers); Elastic Beanstalk (PaaS).
           </script>
         </section>
 
