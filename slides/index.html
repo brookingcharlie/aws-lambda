@@ -99,6 +99,19 @@
 
         <section data-markdown>
           <script type="text/template">
+            ### Invocation types
+
+            * `Event`: asynchronous, not returning any response
+              * e.g. S3, SNS, Kinesis, DynamoDB
+              * e.g. some custom apps
+
+            * `RequestResponse`: synchronous, returning response
+              * e.g. custom apps via API Gateway
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
             ### Code execution
 
             * Run code without managing containers or virtual machines.
