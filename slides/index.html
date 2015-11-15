@@ -60,6 +60,32 @@
 
         <section data-markdown>
           <script type="text/template">
+            ### What is AWS Lambda?
+
+            > AWS Lambda is a compute service that runs your code in response to events and
+            > automatically manages the underlying compute resources for you.
+
+            -- [AWS Lambda Product Details](https://aws.amazon.com/lambda/details/)
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ### Event-based
+
+            * Files: change to data in S3 buckets (Push)
+            * Database: updates in DynamoDB tables (Pull)
+            * Pub-sub: message to Simple Notification Service topic (Push)
+            * Queue: records posted to Kinesis stream (Pull)
+            * Email: email received by Simple Email Service (Push)
+            * Others: Cognito, CloudWatch Logs, CloudFormation
+
+            Push event mappings are maintained on source side.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
             ### Pretty Code
 
             ```JavaScript
